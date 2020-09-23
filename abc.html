@@ -1,0 +1,266 @@
+<html>
+  <head>
+      <title>Flex-box</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+      .containera,.containerb,.containerc,.containerd,.containere,.containerf,.containerg,.containerh,.containeri,.containerj,.containerk,.containerl,.containerm,.containern{
+      		height:500px;
+        	border:3px solid red;
+        	width:100%;
+      }
+      u{
+        color:red;
+      }
+      #item-1,#item-2,#item-3,#item-4,#item-5,#item-6{
+        background-color:tomato;
+        font-family: 'Shadows Into Light', cursive;
+        border:3px solid green;
+        margin:10px;
+        padding:3px;
+      
+      }
+      .containerb,.containerc,.containerd,.containere,.containerf,.containerg,.containerh,.containeri,.containerj,.containerk,.containerl,.containerm,.containern{
+      		display:flex;
+      }
+      .itemc,.itemd,.iteme,.itemf,.itemg,.itemh,.itemi,.itemj,.itemk,.iteml,.itemm,.itemn{
+        width:70px;
+        height:70px;
+      }
+      .containerd{
+      			flex-direction:column;
+      }
+      .containere{
+      				flex-direction:row-reverse;
+      }
+      .containerf{
+      				flex-direction:column-reverse;
+      }
+      .containerg{
+      				flex-wrap:wrap;
+      }
+      .containerh{
+      				flex-wrap:wrap-reverse;
+      }
+      .containeri{
+      				justify-content:center;
+      }
+      .containerj{
+      				justify-content:space-between;
+      }
+      .containerk{
+      				justify-content:space-evenly;
+      }
+      .containerl{
+      				align-items:center;
+      }
+      .containerm{
+      				align-items:flex-end;
+      }
+      .containern{
+      				align-items:stretch;
+        			flex-wrap:wrap;
+      }
+      .stick{
+        position: sticky; 
+        top: 1px; 
+        left: 0px; 
+        z-index: 999;
+        width:100%;
+        margin: 0;
+        right:100px;
+  		padding: 10px 0 0 12px;
+        background-color:black;
+        height: 30px;
+        color:white;
+        margin-bottom: 10px;
+      }
+      a{
+          text-decoration: none;
+          color: greenyellow;
+      }
+      #top{
+            background-color: aquamarine;
+            height: 100px;
+            font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="top">Flex-box Tutorial</h1>
+    <h6></h6>
+    <h3 class="stick">Using div tags in a normal manner, the preview is shown below</h3>
+    <div class="containera">
+      <div class="itema" id="item-1">First box</div>
+      <div class="itema" id="item-2">Second box</div>
+      <div class="itema" id="item-3">Third box</div>
+      <div class="itema" id="item-4">Fourth box</div>
+      <div class="itema" id="item-5">Fifth box</div>
+      <div class="itema" id="item-6">Sixth box</div>
+    </div>
+    <strong><u>Also it is not responsive</u></strong>
+    <h6></h6>
+      <br><br><br>
+    <h3 class="stick" id="start">Starting flex-box</h3>
+      <h1><i><strong>This a flex-box</strong></i></h1>
+    <h3>After declaring above table as flex box</h3>
+    <div class="containerb">
+      <div class="itemb" id="item-1">First box</div>
+      <div class="itemb" id="item-2">Second box</div>
+      <div class="itemb" id="item-3">Third box</div>
+      <div class="itemb" id="item-4">Fourth box</div>
+      <div class="itemb" id="item-5">Fifth box</div>
+      <div class="itemb" id="item-6">Sixth box</div>
+    </div>
+      <br><br><br>
+    <h3 class="stick" id="flexdir">flex-direction:row</h3>
+    <h3>Changing height and width of box<br>It has flex-direction as row by default</h3>
+    
+    <div class="containerc">
+      <div class="itemc" id="item-1">First box</div>
+      <div class="itemc" id="item-2">Second box</div>
+      <div class="itemc" id="item-3">Third box</div>
+      <div class="itemc" id="item-4">Fourth box</div>
+      <div class="itemc" id="item-5">Fifth box</div>
+      <div class="itemc" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    
+    <h3 class="stick">flex-direction:column</h3>
+    <h3>Changing flex-direction to column</h3>
+    <div class="containerd">
+      <div class="itemd" id="item-1">First box</div>
+      <div class="itemd" id="item-2">Second box</div>
+      <div class="itemd" id="item-3">Third box</div>
+      <div class="itemd" id="item-4">Fourth box</div>
+      <div class="itemd" id="item-5">Fifth box</div>
+      <div class="itemd" id="item-6">Sixth box</div>
+    </div>
+    
+    <br><br><br>
+    
+    <h3 class="stick">flex-direction:row-reverse</h3>
+    <h3>Changing flex-direction to row-reverse</h3>
+    <div class="containere">
+      <div class="iteme" id="item-1">First box</div>
+      <div class="iteme" id="item-2">Second box</div>
+      <div class="iteme" id="item-3">Third box</div>
+      <div class="iteme" id="item-4">Fourth box</div>
+      <div class="iteme" id="item-5">Fifth box</div>
+      <div class="iteme" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    <h3 class="stick">flex-direction:column-reverse</h3>
+    <h3>Changing flex-direction to column-reverse</h3>
+    <div class="containerf">
+      <div class="itemf" id="item-1">First box</div>
+      <div class="itemf" id="item-2">Second box</div>
+      <div class="itemf" id="item-3">Third box</div>
+      <div class="itemf" id="item-4">Fourth box</div>
+      <div class="itemf" id="item-5">Fifth box</div>
+      <div class="itemf" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    <h3 class="stick" id="flexwrap">flex-wrap:wrap</h3>
+    <h3>Now wrapping of flex box comes using <br><u>flex-wrap:nowrap </u>which is default value for <u>wrapping</u></h3>
+    <h3>Now wrapping of flex box comes using flex-wrap:wrap<br>Wrapping plays an essential part in responsive web design<br>If height is
+    minimized, then content will go on next line</h3>
+    <div class="containerg">
+      <div class="itemg" id="item-1">First box</div>
+      <div class="itemg" id="item-2">Second box</div>
+      <div class="itemg" id="item-3">Third box</div>
+      <div class="itemg" id="item-4">Fourth box</div>
+      <div class="itemg" id="item-5">Fifth box</div>
+      <div class="itemg" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    <h3 class="stick">flex-wrap:wrap-reverse</h3>
+    <h3>Now wrapping of flex box comes using flex-wrap:wrap-reverse which is reverse of above wrapping</h3>
+    <div class="containerh">
+      <div class="itemh" id="item-1">First box</div>
+      <div class="itemh" id="item-2">Second box</div>
+      <div class="itemh" id="item-3">Third box</div>
+      <div class="itemh" id="item-4">Fourth box</div>
+      <div class="itemh" id="item-5">Fifth box</div>
+      <div class="itemh" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    <h3>The both properties above can be written together as:<br> <u id="flexflow">flex-flow:(flex-direction) (flex-wrap)</u></h3>
+    <h3 class="stick" id="justifyt">justify-content:center</h3>
+    <br><br><br>
+    <h3>Now comes part related to justification and alignment of the boxes<br>This is<br> <u>justify-content:center</u><br> for aligning content at the center<br>Even 			after chaning the width, the boxes will remain at the <u>center</u></h3>
+    <div class="containeri">
+      <div class="itemi" id="item-1">First box</div>
+      <div class="itemi" id="item-2">Second box</div>
+      <div class="itemi" id="item-3">Third box</div>
+      <div class="itemi" id="item-4">Fourth box</div>
+      <div class="itemi" id="item-5">Fifth box</div>
+      <div class="itemi" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    
+    <h3 class="stick">justify-content:space-between</h3>
+    
+    <h3>Now comes <br> <u>justify-content:space-between</u><br> having <u>uniform spaces in between</u></h3>
+    <div class="containerj">
+      <div class="itemj" id="item-1">First box</div>
+      <div class="itemj" id="item-2">Second box</div>
+      <div class="itemj" id="item-3">Third box</div>
+      <div class="itemj" id="item-4">Fourth box</div>
+      <div class="itemj" id="item-5">Fifth box</div>
+      <div class="itemj" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    
+    <h3 class="stick">justify-content:space-evenly</h3>
+    
+    <h3>Now comes <br> <u>justify-content:space-evenly</u><br> having <u>uniform spaces in between and with the border around</u></h3>
+    <div class="containerk">
+      <div class="itemk" id="item-1">First box</div>
+      <div class="itemk" id="item-2">Second box</div>
+      <div class="itemk" id="item-3">Third box</div>
+      <div class="itemk" id="item-4">Fourth box</div>
+      <div class="itemk" id="item-5">Fifth box</div>
+      <div class="itemk" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    <h3 class="stick" id="alignitems">align-items:center</h3>
+    <h3>Now comes aligning all the boxes vertically <br> <u>align-items:center</u></h3>
+    <div class="containerl">
+      <div class="iteml" id="item-1">First box</div>
+      <div class="iteml" id="item-2">Second box</div>
+      <div class="iteml" id="item-3">Third box</div>
+      <div class="iteml" id="item-4">Fourth box</div>
+      <div class="iteml" id="item-5">Fifth box</div>
+      <div class="iteml" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    
+    <h3 class="stick">align-items:flex-end</h3>
+      <h3><u>align-items:flex-end</u><br>Flex box aligned vertically to the base of the box</h3>
+  
+    <div class="containerm">
+      <div class="itemm" id="item-1">First box</div>
+      <div class="itemm" id="item-2">Second box</div>
+      <div class="itemm" id="item-3">Third box</div>
+      <div class="itemm" id="item-4">Fourth box</div>
+      <div class="itemm" id="item-5">Fifth box</div>
+      <div class="itemm" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    
+    <h3>The default condition for vertical alignment is <br><u>align-items:flex-start</u><br></h3>
+    <h3>Now comes  <br><u>align-items:stretch</u><br>This is like<u> space-between for vertical alignement</u><br>If there is proper wrapping and proper width then this 		effect can be seen easily<br>If you want to see effect then using "Inspect element" reduce the width of box and effect will be visible</h3>
+  <h3 class="stick">align-items:flex-stretch</h3>
+    <div class="containern">
+      <div class="itemn" id="item-1">First box</div>
+      <div class="itemn" id="item-2">Second box</div>
+      <div class="itemn" id="item-3">Third box</div>
+      <div class="itemn" id="item-4">Fourth box</div>
+      <div class="itemn" id="item-5">Fifth box</div>
+      <div class="itemn" id="item-6">Sixth box</div>
+    </div>
+    <br><br><br>
+    <h3><a href="#top">Go to top</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#start">Start</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#flexdir">Flex-direction</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#flexwrap">Flex wrap</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><a href="#justifyt">Justify</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#flexflow">Flex-flow shortcut</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#alignitems">Alignment vertical </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></h3>
+  </body>
+</html>
