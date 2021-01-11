@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+.containera,
+.containerb,
+.containerc,
+.containerd,
+.containere,
+.containerf,
+.containerg,
+.containerh,
+.containeri,
+.containerj,
+.containerk,
+.containerl,
+.containerm,
+.containern {
+  height: 500px;
+  border: 3px solid red;
+  width: 100%;
+}
+u {
+  color: red;
+}
+#item-1,
+#item-2,
+#item-3,
+#item-4,
+#item-5,
+#item-6 {
+  background-color: tomato;
+  font-family: "Shadows Into Light", cursive;
+  border: 3px solid green;
+  margin: 10px;
+  padding: 3px;
+}
+.containerb,
+.containerc,
+.containerd,
+.containere,
+.containerf,
+.containerg,
+.containerh,
+.containeri,
+.containerj,
+.containerk,
+.containerl,
+.containerm,
+.containern {
+  display: flex;
+}
+.itemc,
+.itemd,
+.iteme,
+.itemf,
+.itemg,
+.itemh,
+.itemi,
+.itemj,
+.itemk,
+.iteml,
+.itemm,
+.itemn {
+  width: 70px;
+  height: 70px;
+}
+.containerd {
+  flex-direction: column;
+}
+.containere {
+  flex-direction: row-reverse;
+}
+.containerf {
+  flex-direction: column-reverse;
+}
+.containerg {
+  flex-wrap: wrap;
+}
+.containerh {
+  flex-wrap: wrap-reverse;
+}
+.containeri {
+  justify-content: center;
+}
+.containerj {
+  justify-content: space-between;
+}
+.containerk {
+  justify-content: space-evenly;
+}
+.containerl {
+  align-items: center;
+}
+.containerm {
+  align-items: flex-end;
+}
+.containern {
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.stick {
+  position: sticky;
+  top: 1px;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+  margin: 0;
+  right: 100px;
+  padding: 10px 0 0 12px;
+  background-color: black;
+  height: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: greenyellow;
+}
+#top {
+  background-color: aquamarine;
+  height: 100px;
+  font-size: 100px;
+}
